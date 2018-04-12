@@ -7,8 +7,11 @@ namespace SimpleTaskSystem.Tasks
 {
     public class Task : Entity<long>
     {
-        [ForeignKey("AssignedPersonId")]
-        public virtual Person AssignedPerson { get; set; }
+        public Task()
+        {
+            CreationTime = DateTime.Now;
+            State = TaskState.Active;
+        }
 
         public virtual int? AssignedPersonId { get; set; }
         
@@ -18,11 +21,8 @@ namespace SimpleTaskSystem.Tasks
 
         public virtual TaskState State { get; set; }
 
-        public Task()
-        {
-            CreationTime = DateTime.Now;
-            State = TaskState.Active;
-        }
+        [ForeignKey("AssignedPersonId")]
+        public virtual Person AssignedPerson { get; set; }
     }
     
 }
