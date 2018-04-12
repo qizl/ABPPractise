@@ -11,7 +11,12 @@
     <RootNamespace>SimpleTaskSystem</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Localization\SourceFiles\*.json" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
+    <None Remove="Localization\SourceFiles\SimpleTaskSystem-zh-CN.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\SourceFiles\SimpleTaskSystem-tr.json" />
+    <EmbeddedResource Include="Localization\SourceFiles\SimpleTaskSystem-zh-CN.json" />
+    <EmbeddedResource Include="Localization\SourceFiles\SimpleTaskSystem.json" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Abp" Version="3.4.0" />

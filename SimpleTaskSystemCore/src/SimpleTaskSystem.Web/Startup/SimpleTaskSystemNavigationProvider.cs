@@ -13,10 +13,10 @@ namespace SimpleTaskSystem.Web.Startup
             context.Manager.MainMenu
                 .AddItem(
                     new MenuItemDefinition(
-                        PageNames.Home,
-                        L("Home"),
-                        url: "",
-                        icon: "fa fa-home"
+                        PageNames.TaskList,
+                        L("TaskList"),
+                        url: "Tasks",
+                        icon: "fa fa-tasks"
                         )
                 ).AddItem(
                     new MenuItemDefinition(
@@ -27,10 +27,10 @@ namespace SimpleTaskSystem.Web.Startup
                         )
                 ).AddItem(
                     new MenuItemDefinition(
-                        PageNames.TaskList,
-                        L("TaskList"),
-                        url: "Tasks",
-                        icon: "fa fa-tasks"
+                        PageNames.Home,
+                        L("Home"),
+                        url: "",
+                        icon: "fa fa-home"
                         )
                 );
         }

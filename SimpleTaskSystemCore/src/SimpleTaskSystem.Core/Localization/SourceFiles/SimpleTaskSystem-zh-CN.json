@@ -1,0 +1,11 @@
+﻿{
+    "culture": "zh-CN",
+    "texts": {
+        "HelloWorld": "Hello World!",
+        "ChangeLanguage": "切换语言",
+        "Home": "主页",
+        "About": "关于我们",
+        "TaskList": "任务列表",
+        "AddNew": "新建任务"
+    }
+}
