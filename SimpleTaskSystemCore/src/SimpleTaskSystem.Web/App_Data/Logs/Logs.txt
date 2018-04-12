@@ -1,0 +1,131 @@
+DEBUG 2018-04-12 21:51:19,992 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-12 21:51:20,311 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2018-04-12 21:51:20,385 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SimpleTaskSystem.Web.Startup.SimpleTaskSystemWebModule, SimpleTaskSystem.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-12 21:51:20,391 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SimpleTaskSystem.SimpleTaskSystemApplicationModule, SimpleTaskSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-12 21:51:20,392 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SimpleTaskSystem.SimpleTaskSystemCoreModule, SimpleTaskSystem.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-12 21:51:20,394 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-12 21:51:20,395 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-12 21:51:20,396 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SimpleTaskSystem.EntityFrameworkCore.SimpleTaskSystemEntityFrameworkCoreModule, SimpleTaskSystem.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-12 21:51:20,397 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-12 21:51:20,398 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-12 21:51:20,399 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-12 21:51:20,400 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-12 21:51:20,409 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+DEBUG 2018-04-12 21:51:20,974 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: SimpleTaskSystem.EntityFrameworkCore.SimpleTaskSystemDbContext, SimpleTaskSystem.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-12 21:51:21,295 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-04-12 21:51:21,321 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-12 21:51:21,752 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: SimpleTaskSystem
+DEBUG 2018-04-12 21:51:21,754 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-12 21:51:22,279 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-12 21:51:22,419 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes define auto mapping attributes
+INFO  2018-04-12 21:51:23,752 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+WARN  2018-04-12 21:51:24,022 [9    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2018-04-12 21:51:24,057 [9    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+INFO  2018-04-12 21:51:24,611 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.HomeController.Index (SimpleTaskSystem.Web) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-12 21:51:24,665 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.HomeController.Index is executed by an anonymous user in 150 ms from ::1 IP address with succeed.
+INFO  2018-04-12 21:51:29,120 [9    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2018-04-12 21:51:30,861 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.HomeController.Index (SimpleTaskSystem.Web) in 6470.3398ms
+INFO  2018-04-12 21:51:30,894 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7215.5138ms 200 text/html; charset=utf-8
+INFO  2018-04-12 21:51:30,900 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/css/font-awesome.css  
+INFO  2018-04-12 21:51:30,903 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.css  
+INFO  2018-04-12 21:51:30,908 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-paper/bootstrap.css  
+INFO  2018-04-12 21:51:30,934 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap-paper/bootstrap.css'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\bootstrap-paper\bootstrap.css'
+INFO  2018-04-12 21:51:30,937 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.css'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\toastr\toastr.css'
+INFO  2018-04-12 21:51:30,942 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/css/font-awesome.css'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\font-awesome\css\font-awesome.css'
+INFO  2018-04-12 21:51:30,952 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css  
+INFO  2018-04-12 21:51:30,956 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.css'
+INFO  2018-04-12 21:51:30,984 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/main.css  
+INFO  2018-04-12 21:51:30,995 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/main.css'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\css\main.css'
+INFO  2018-04-12 21:51:31,024 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert.css  
+INFO  2018-04-12 21:51:31,027 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 85.086ms 200 text/css
+INFO  2018-04-12 21:51:31,031 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert.css'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\sweetalert\dist\sweetalert.css'
+INFO  2018-04-12 21:51:31,040 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 85.0045ms 200 text/css
+INFO  2018-04-12 21:51:31,049 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 88.884ms 200 text/css
+INFO  2018-04-12 21:51:31,080 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/js/bootstrap.js  
+INFO  2018-04-12 21:51:31,084 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 43.8051ms 200 text/css
+INFO  2018-04-12 21:51:31,087 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js  
+INFO  2018-04-12 21:51:31,093 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/json2/json2.js  
+INFO  2018-04-12 21:51:31,095 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery/dist/jquery.js  
+INFO  2018-04-12 21:51:31,098 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/moment/min/moment-with-locales.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\moment\min\moment-with-locales.js'
+INFO  2018-04-12 21:51:31,122 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+INFO  2018-04-12 21:51:31,151 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\jquery\dist\jquery.js'
+INFO  2018-04-12 21:51:31,181 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 92.3997ms 200 application/javascript
+INFO  2018-04-12 21:51:31,221 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 120.7518ms 200 text/css
+INFO  2018-04-12 21:51:31,229 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 117.7111ms 200 application/javascript
+INFO  2018-04-12 21:51:31,245 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blockUI/jquery.blockUI.js  
+INFO  2018-04-12 21:51:31,251 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.js  
+INFO  2018-04-12 21:51:31,255 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/dist/jquery.validate.js  
+INFO  2018-04-12 21:51:31,260 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/blockUI/jquery.blockUI.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\blockUI\jquery.blockUI.js'
+INFO  2018-04-12 21:51:31,263 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/json2/json2.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\json2\json2.js'
+INFO  2018-04-12 21:51:31,268 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+INFO  2018-04-12 21:51:31,282 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.6103ms 200 application/javascript
+INFO  2018-04-12 21:51:31,302 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 241.5465ms 200 application/javascript
+INFO  2018-04-12 21:51:31,334 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert-dev.js  
+INFO  2018-04-12 21:51:31,337 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/spin.js  
+INFO  2018-04-12 21:51:31,348 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert-dev.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\sweetalert\dist\sweetalert-dev.js'
+INFO  2018-04-12 21:51:31,350 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 30.0546ms 200 application/javascript
+INFO  2018-04-12 21:51:31,382 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/jquery.spin.js  
+INFO  2018-04-12 21:51:31,395 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\toastr\toastr.js'
+INFO  2018-04-12 21:51:31,410 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/jquery.spin.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\spin.js\jquery.spin.js'
+INFO  2018-04-12 21:51:31,413 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 154.7915ms 200 application/javascript
+INFO  2018-04-12 21:51:31,419 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/spin.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\spin.js\spin.js'
+INFO  2018-04-12 21:51:31,443 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 54.3631ms 200 application/javascript
+INFO  2018-04-12 21:51:31,456 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 76.5892ms 200 application/javascript
+INFO  2018-04-12 21:51:31,461 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 455.8904ms 200 text/css
+INFO  2018-04-12 21:51:31,476 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js  
+INFO  2018-04-12 21:51:31,480 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 131.5219ms 200 application/javascript
+INFO  2018-04-12 21:51:31,515 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js  
+INFO  2018-04-12 21:51:31,520 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js  
+INFO  2018-04-12 21:51:31,526 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.toastr.js'
+INFO  2018-04-12 21:51:31,540 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js  
+INFO  2018-04-12 21:51:31,544 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js  
+INFO  2018-04-12 21:51:31,549 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.sweet-alert.js'
+INFO  2018-04-12 21:51:31,553 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.jquery.js'
+INFO  2018-04-12 21:51:31,566 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 59.6235ms 200 application/javascript
+INFO  2018-04-12 21:51:31,574 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/abp.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\abp.js'
+INFO  2018-04-12 21:51:31,583 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 480.5517ms 200 application/javascript
+INFO  2018-04-12 21:51:31,599 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2018-04-12 21:51:31,629 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591666908186124  
+INFO  2018-04-12 21:51:31,634 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 131.7363ms 200 application/javascript
+INFO  2018-04-12 21:51:31,644 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 71.4542ms 200 application/javascript
+INFO  2018-04-12 21:51:31,651 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 109.9293ms 200 application/javascript
+INFO  2018-04-12 21:51:31,664 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js  
+INFO  2018-04-12 21:51:31,671 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.spin.js'
+INFO  2018-04-12 21:51:31,691 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/views/home/index.js  
+INFO  2018-04-12 21:51:31,709 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591666908196763  
+INFO  2018-04-12 21:51:31,724 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 163.7524ms 200 application/javascript
+INFO  2018-04-12 21:51:31,742 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/views/home/index.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\js\views\home\index.js'
+INFO  2018-04-12 21:51:31,758 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 103.594ms 200 application/javascript
+INFO  2018-04-12 21:51:31,769 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.6808ms 200 application/javascript
+INFO  2018-04-12 21:51:31,824 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2018-04-12 21:51:31,875 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 21:51:31,987 [15   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 21:51:31,997 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 227.308ms
+INFO  2018-04-12 21:51:32,012 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 390.5496ms 200 application/x-javascript
+INFO  2018-04-12 21:51:32,027 [10   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 21:51:32,035 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 265.8338ms
+INFO  2018-04-12 21:51:32,046 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 332.1644ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 21:51:32,179 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3  
+INFO  2018-04-12 21:51:32,185 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2018-04-12 21:51:32,201 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/fonts/fontawesome-webfont.woff2'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2'
+INFO  2018-04-12 21:51:32,256 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2018-04-12 21:51:32,773 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 57.807ms 200 font/woff2
+INFO  2018-04-12 21:51:32,803 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 562.3741ms 200 image/png
+INFO  2018-04-12 21:51:32,811 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2018-04-12 21:51:32,825 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 34.7712ms 404 
+INFO  2018-04-12 21:51:56,827 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Home/About  
+INFO  2018-04-12 21:51:56,834 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.HomeController.About (SimpleTaskSystem.Web) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-12 21:51:56,835 [11   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.HomeController.About is executed by an anonymous user in 3 ms from ::1 IP address with succeed.
+INFO  2018-04-12 21:51:57,151 [11   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/About.cshtml.
+INFO  2018-04-12 21:51:57,181 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.HomeController.About (SimpleTaskSystem.Web) in 344.6639ms
+INFO  2018-04-12 21:51:57,322 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 359.3865ms 200 text/html; charset=utf-8
+INFO  2018-04-12 21:51:57,345 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591667171756612  
+INFO  2018-04-12 21:51:57,356 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591667171757501  
+INFO  2018-04-12 21:51:57,372 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2018-04-12 21:51:57,411 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 21:51:57,430 [10   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 21:51:57,464 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 83.5266ms
+INFO  2018-04-12 21:51:57,473 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 131.8133ms 200 application/x-javascript
+INFO  2018-04-12 21:51:57,481 [9    ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 21:51:57,493 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 120.786ms
+INFO  2018-04-12 21:51:57,500 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 171.3791ms 200 application/x-javascript; charset=utf-8
