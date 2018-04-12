@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using SimpleTaskSystem.Task.Dtos;
 using SimpleTaskSystem.Tasks;
-using SimpleTaskSystem.Tasks.Dtos;
 
 namespace SimpleTaskSystem0726
 {

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
 using Abp.EntityFramework;
 using SimpleTaskSystem.Tasks;
 using SimpleTaskSystem0726.EntityFramework;
@@ -25,9 +23,7 @@ namespace SimpleTaskSystem.EntityFramework.Repositories
                 query = query.Where(task => task.State == state);
             }
 
-            return query
-                .OrderByDescending(task => task.CreationTime).Include(task => task.AssignedPerson)
-                .ToList();
+            return query.OrderByDescending(task => task.CreationTime).Include(task => task.AssignedPerson).ToList();
         }
 
         public TaskRepository(IDbContextProvider<SimpleTaskSystem0726DbContext> dbContextProvider) : base(dbContextProvider)

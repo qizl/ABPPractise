@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Abp.Application.Services;
 using Abp.Domain.Repositories;
 using AutoMapper;
 using SimpleTaskSystem.People;
 using SimpleTaskSystem.SimpleTask;
 using SimpleTaskSystem.Task.Dtos;
-using SimpleTaskSystem.Tasks.Dtos;
 using SimpleTaskSystem.Tasks;
+using SimpleTaskSystem.Tasks.Dtos;
 
 namespace SimpleTaskSystem.Task
 {
