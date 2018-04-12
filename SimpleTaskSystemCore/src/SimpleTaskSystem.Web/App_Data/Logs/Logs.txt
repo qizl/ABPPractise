@@ -1172,3 +1172,5 @@ INFO  2018-04-12 23:42:32,639 [28   ] tCore.Mvc.Internal.ContentResultExecutor -
 INFO  2018-04-12 23:42:32,639 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.7991ms 200 application/x-javascript; charset=utf-8
 INFO  2018-04-12 23:42:32,639 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 3.7118ms
 INFO  2018-04-12 23:42:32,639 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.1418ms 200 application/x-javascript
+INFO  2018-04-12 23:45:11,447 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://127.0.0.1:31174/iisintegration  0
+INFO  2018-04-12 23:45:11,448 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.5ms 202 
