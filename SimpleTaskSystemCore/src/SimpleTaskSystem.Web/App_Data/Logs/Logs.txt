@@ -627,3 +627,548 @@ INFO  2018-04-12 23:35:02,574 [20   ] ore.Mvc.Internal.ControllerActionInvoker -
 INFO  2018-04-12 23:35:02,575 [20   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
 INFO  2018-04-12 23:35:02,575 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 3.3942ms
 INFO  2018-04-12 23:35:02,576 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.2678ms 200 application/x-javascript
+INFO  2018-04-12 23:36:19,699 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tasks?state=  
+INFO  2018-04-12 23:36:19,701 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) with arguments (SimpleTaskSystem.Tasks.Dtos.GetAllTasksInput) - ModelState is Valid
+INFO  2018-04-12 23:36:19,704 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Tasks.TaskAppService.GetAll is executed by an anonymous user in 2 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:36:19,704 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.TasksController.Index is executed by an anonymous user in 3 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:36:19,705 [9    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Tasks/Index.cshtml.
+WARN  2018-04-12 23:36:19,705 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:19,705 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:19,705 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'AddNew' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:19,705 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'AllTasks' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:19,705 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:19,705 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Completed' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:19,706 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:19,706 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'Unassigned' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:20,074 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:20,074 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:36:20,108 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) in 408.0324ms
+INFO  2018-04-12 23:36:20,108 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 409.406ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:36:20,146 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/jquery-extensions.js  
+INFO  2018-04-12 23:36:20,146 [22   ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/jquery-extensions.js was not modified
+INFO  2018-04-12 23:36:20,147 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.0639ms 304 application/javascript
+INFO  2018-04-12 23:36:20,150 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591729801059659  
+INFO  2018-04-12 23:36:20,152 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591729801068389  
+INFO  2018-04-12 23:36:20,155 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+WARN  2018-04-12 23:36:20,156 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:20,156 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:36:20,157 [30   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:36:20,158 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 3.9593ms
+INFO  2018-04-12 23:36:20,158 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.7508ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:36:20,159 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:36:20,160 [22   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:36:20,160 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 7.0263ms
+INFO  2018-04-12 23:36:20,160 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.5883ms 200 application/x-javascript
+INFO  2018-04-12 23:36:20,161 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/views/tasks/index.js?v=L6aDGgJye0cm_ZMMsWq0uSPWLg0N5smxzXkH0YOkXvE  
+INFO  2018-04-12 23:36:20,161 [22   ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/views/tasks/index.js was not modified
+INFO  2018-04-12 23:36:20,161 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.845ms 304 application/javascript
+INFO  2018-04-12 23:36:28,088 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tasks?state=  
+INFO  2018-04-12 23:36:28,091 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) with arguments (SimpleTaskSystem.Tasks.Dtos.GetAllTasksInput) - ModelState is Valid
+INFO  2018-04-12 23:36:28,094 [29   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Tasks.TaskAppService.GetAll is executed by an anonymous user in 2 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:36:28,095 [29   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.TasksController.Index is executed by an anonymous user in 4 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:36:28,095 [29   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Tasks/Index.cshtml.
+WARN  2018-04-12 23:36:28,096 [29   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:28,096 [29   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:28,096 [29   ] naries.DictionaryBasedLocalizationSource - Can not find 'AddNew' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:28,096 [29   ] naries.DictionaryBasedLocalizationSource - Can not find 'AllTasks' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:28,096 [29   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:28,096 [29   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Completed' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:28,096 [29   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:28,096 [29   ] naries.DictionaryBasedLocalizationSource - Can not find 'Unassigned' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:28,097 [29   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:28,097 [29   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:36:28,099 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) in 9.3452ms
+INFO  2018-04-12 23:36:28,099 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.8887ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:36:28,135 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.css  
+INFO  2018-04-12 23:36:28,136 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.css'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\toastr\toastr.css'
+INFO  2018-04-12 23:36:28,137 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-paper/bootstrap.css  
+INFO  2018-04-12 23:36:28,137 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/css/font-awesome.css  
+INFO  2018-04-12 23:36:28,138 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap-paper/bootstrap.css'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\bootstrap-paper\bootstrap.css'
+INFO  2018-04-12 23:36:28,138 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/css/font-awesome.css'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\font-awesome\css\font-awesome.css'
+INFO  2018-04-12 23:36:28,141 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.0009ms 200 text/css
+INFO  2018-04-12 23:36:28,141 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.6642ms 200 text/css
+INFO  2018-04-12 23:36:28,148 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert.css  
+INFO  2018-04-12 23:36:28,150 [27   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert.css'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\sweetalert\dist\sweetalert.css'
+INFO  2018-04-12 23:36:28,150 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.279ms 200 text/css
+INFO  2018-04-12 23:36:28,152 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/main.css  
+INFO  2018-04-12 23:36:28,152 [30   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/main.css'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\css\main.css'
+INFO  2018-04-12 23:36:28,165 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.0742ms 200 text/css
+INFO  2018-04-12 23:36:28,166 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css  
+INFO  2018-04-12 23:36:28,167 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 29.3242ms 200 text/css
+INFO  2018-04-12 23:36:28,167 [28   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.css'
+INFO  2018-04-12 23:36:28,167 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4739ms 200 text/css
+INFO  2018-04-12 23:36:28,181 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery/dist/jquery.js  
+INFO  2018-04-12 23:36:28,181 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/json2/json2.js  
+INFO  2018-04-12 23:36:28,182 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/json2/json2.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\json2\json2.js'
+INFO  2018-04-12 23:36:28,182 [31   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\jquery\dist\jquery.js'
+INFO  2018-04-12 23:36:28,183 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3501ms 200 application/javascript
+INFO  2018-04-12 23:36:28,192 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.189ms 200 application/javascript
+INFO  2018-04-12 23:36:28,192 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/js/bootstrap.js  
+INFO  2018-04-12 23:36:28,193 [31   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+INFO  2018-04-12 23:36:28,195 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.7727ms 200 application/javascript
+INFO  2018-04-12 23:36:28,203 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/dist/jquery.validate.js  
+INFO  2018-04-12 23:36:28,203 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js  
+INFO  2018-04-12 23:36:28,204 [27   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/moment/min/moment-with-locales.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\moment\min\moment-with-locales.js'
+INFO  2018-04-12 23:36:28,204 [31   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+INFO  2018-04-12 23:36:28,205 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.1147ms 200 application/javascript
+INFO  2018-04-12 23:36:28,229 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blockUI/jquery.blockUI.js  
+INFO  2018-04-12 23:36:28,229 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.js  
+INFO  2018-04-12 23:36:28,230 [27   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\toastr\toastr.js'
+INFO  2018-04-12 23:36:28,230 [31   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/blockUI/jquery.blockUI.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\blockUI\jquery.blockUI.js'
+INFO  2018-04-12 23:36:28,231 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3079ms 200 application/javascript
+INFO  2018-04-12 23:36:28,236 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.159ms 200 application/javascript
+INFO  2018-04-12 23:36:28,236 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.7043ms 200 application/javascript
+INFO  2018-04-12 23:36:28,248 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert-dev.js  
+INFO  2018-04-12 23:36:28,249 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert-dev.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\sweetalert\dist\sweetalert-dev.js'
+INFO  2018-04-12 23:36:28,256 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.5605ms 200 application/javascript
+INFO  2018-04-12 23:36:28,272 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/spin.js  
+INFO  2018-04-12 23:36:28,274 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/spin.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\spin.js\spin.js'
+INFO  2018-04-12 23:36:28,275 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.3481ms 200 application/javascript
+INFO  2018-04-12 23:36:28,287 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/jquery.spin.js  
+INFO  2018-04-12 23:36:28,287 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js  
+INFO  2018-04-12 23:36:28,288 [27   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/abp.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\abp.js'
+INFO  2018-04-12 23:36:28,288 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/jquery.spin.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\spin.js\jquery.spin.js'
+INFO  2018-04-12 23:36:28,289 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.2515ms 200 application/javascript
+INFO  2018-04-12 23:36:28,292 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.3103ms 200 application/javascript
+INFO  2018-04-12 23:36:28,294 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js  
+INFO  2018-04-12 23:36:28,295 [31   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.jquery.js'
+INFO  2018-04-12 23:36:28,295 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.8815ms 200 application/javascript
+INFO  2018-04-12 23:36:28,300 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js  
+INFO  2018-04-12 23:36:28,302 [31   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2018-04-12 23:36:28,302 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js  
+INFO  2018-04-12 23:36:28,303 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.3514ms 200 application/javascript
+INFO  2018-04-12 23:36:28,304 [31   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.toastr.js'
+INFO  2018-04-12 23:36:28,305 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.6815ms 200 application/javascript
+INFO  2018-04-12 23:36:28,312 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js  
+INFO  2018-04-12 23:36:28,313 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.sweet-alert.js'
+INFO  2018-04-12 23:36:28,313 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.2697ms 200 application/javascript
+INFO  2018-04-12 23:36:28,315 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js  
+INFO  2018-04-12 23:36:28,317 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.spin.js'
+INFO  2018-04-12 23:36:28,320 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/jquery-extensions.js  
+INFO  2018-04-12 23:36:28,320 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/jquery-extensions.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\js\jquery-extensions.js'
+INFO  2018-04-12 23:36:28,321 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.3579ms 200 application/javascript
+INFO  2018-04-12 23:36:28,321 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.463ms 200 application/javascript
+INFO  2018-04-12 23:36:28,326 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591729880984766  
+INFO  2018-04-12 23:36:28,326 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591729880985080  
+INFO  2018-04-12 23:36:28,330 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:36:28,330 [20   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:36:28,331 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.2636ms
+INFO  2018-04-12 23:36:28,331 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.5015ms 200 application/x-javascript
+INFO  2018-04-12 23:36:28,331 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+WARN  2018-04-12 23:36:28,332 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:36:28,332 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:36:28,334 [19   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:36:28,334 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 4.7102ms
+INFO  2018-04-12 23:36:28,334 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.6734ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:36:28,336 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/views/tasks/index.js?v=L6aDGgJye0cm_ZMMsWq0uSPWLg0N5smxzXkH0YOkXvE  
+INFO  2018-04-12 23:36:28,337 [20   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/views/tasks/index.js'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\js\views\tasks\index.js'
+INFO  2018-04-12 23:36:28,338 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.6928ms 200 application/javascript
+INFO  2018-04-12 23:36:28,464 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2018-04-12 23:36:28,464 [28   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2018-04-12 23:36:28,465 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3  
+INFO  2018-04-12 23:36:28,466 [28   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/fonts/fontawesome-webfont.woff2'. Physical path: 'F:\Docs\PL\Github\ABPPractise\SimpleTaskSystemCore\src\SimpleTaskSystem.Web\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2'
+INFO  2018-04-12 23:36:28,466 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.9791ms 200 image/png
+INFO  2018-04-12 23:36:28,467 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.6005ms 200 font/woff2
+INFO  2018-04-12 23:36:28,571 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2018-04-12 23:36:28,573 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.5788ms 404 
+INFO  2018-04-12 23:37:23,488 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tasks?state=  
+INFO  2018-04-12 23:37:23,499 [31   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) with arguments (SimpleTaskSystem.Tasks.Dtos.GetAllTasksInput) - ModelState is Valid
+INFO  2018-04-12 23:37:23,509 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Tasks.TaskAppService.GetAll is executed by an anonymous user in 8 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:37:23,511 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.TasksController.Index is executed by an anonymous user in 14 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:37:23,512 [22   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Tasks/Index.cshtml.
+WARN  2018-04-12 23:37:23,513 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:23,513 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:23,513 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'AddNew' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:23,513 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'AllTasks' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:23,513 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:23,513 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Completed' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:23,514 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:23,514 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Unassigned' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:23,919 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:23,919 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:37:23,956 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) in 465.3542ms
+INFO  2018-04-12 23:37:23,956 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 468.1994ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:37:23,986 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591730439534323  
+INFO  2018-04-12 23:37:23,990 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:37:23,990 [9    ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:37:23,990 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.2396ms
+INFO  2018-04-12 23:37:23,991 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.3738ms 200 application/x-javascript
+INFO  2018-04-12 23:37:24,007 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591730439548743  
+INFO  2018-04-12 23:37:24,009 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+WARN  2018-04-12 23:37:24,010 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:24,010 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:37:24,011 [9    ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:37:24,011 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 3.1798ms
+INFO  2018-04-12 23:37:24,012 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.9639ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:37:28,750 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2018-04-12 23:37:28,752 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.HomeController.Index (SimpleTaskSystem.Web) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-12 23:37:28,752 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.HomeController.Index is executed by an anonymous user in 0 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:37:28,752 [22   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+WARN  2018-04-12 23:37:28,754 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:28,754 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:37:28,756 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.HomeController.Index (SimpleTaskSystem.Web) in 4.7148ms
+INFO  2018-04-12 23:37:28,756 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.5011ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:37:28,786 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591730487561544  
+INFO  2018-04-12 23:37:28,789 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:37:28,789 [30   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:37:28,790 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.889ms
+INFO  2018-04-12 23:37:28,790 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.6463ms 200 application/x-javascript
+INFO  2018-04-12 23:37:28,791 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591730487562080  
+INFO  2018-04-12 23:37:28,795 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+WARN  2018-04-12 23:37:28,796 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:28,796 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:37:28,798 [30   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:37:28,798 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 5.8677ms
+INFO  2018-04-12 23:37:28,798 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.613ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:37:30,878 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Home/About  
+INFO  2018-04-12 23:37:30,880 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.HomeController.About (SimpleTaskSystem.Web) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-12 23:37:30,880 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.HomeController.About is executed by an anonymous user in 0 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:37:30,880 [9    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/About.cshtml.
+WARN  2018-04-12 23:37:30,882 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:30,882 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:37:30,885 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.HomeController.About (SimpleTaskSystem.Web) in 5.6556ms
+INFO  2018-04-12 23:37:30,885 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.6289ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:37:30,975 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591730508845268  
+INFO  2018-04-12 23:37:30,975 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591730508844629  
+INFO  2018-04-12 23:37:30,977 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:37:30,978 [29   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:37:30,978 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 1.719ms
+INFO  2018-04-12 23:37:30,978 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.2927ms 200 application/x-javascript
+INFO  2018-04-12 23:37:30,979 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+WARN  2018-04-12 23:37:30,979 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:30,979 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:37:30,980 [22   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:37:30,980 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 3.5054ms
+INFO  2018-04-12 23:37:30,980 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.5906ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:37:31,696 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tasks  
+INFO  2018-04-12 23:37:31,699 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) with arguments (SimpleTaskSystem.Tasks.Dtos.GetAllTasksInput) - ModelState is Valid
+INFO  2018-04-12 23:37:31,703 [30   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Tasks.TaskAppService.GetAll is executed by an anonymous user in 3 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:37:31,704 [30   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.TasksController.Index is executed by an anonymous user in 4 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:37:31,704 [30   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Tasks/Index.cshtml.
+WARN  2018-04-12 23:37:31,705 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:31,705 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:31,705 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'AddNew' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:31,705 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'AllTasks' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:31,705 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:31,705 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Completed' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:31,705 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:31,705 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'Unassigned' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:31,707 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:31,707 [30   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:37:31,708 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) in 10.8698ms
+INFO  2018-04-12 23:37:31,709 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.3249ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:37:31,743 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591730517083267  
+INFO  2018-04-12 23:37:31,746 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2018-04-12 23:37:31,746 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591730517082953  
+WARN  2018-04-12 23:37:31,746 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:37:31,746 [9    ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:37:31,747 [9    ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:37:31,747 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 3.3754ms
+INFO  2018-04-12 23:37:31,747 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.0398ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:37:31,748 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:37:31,749 [28   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:37:31,750 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.5931ms
+INFO  2018-04-12 23:37:31,750 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.144ms 200 application/x-javascript
+INFO  2018-04-12 23:40:42,706 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tasks/Create  
+INFO  2018-04-12 23:40:42,709 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.TasksController.Create (SimpleTaskSystem.Web) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-12 23:40:42,741 [19   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.People.PersonAppService.GetPeopleComboboxItems is executed by an anonymous user in 32 ms from ::1 IP address with succeed.
+WARN  2018-04-12 23:40:42,742 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Unassigned' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:40:42,753 [19   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.TasksController.Create is executed by an anonymous user in 44 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:40:42,753 [19   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Tasks/Create.cshtml.
+WARN  2018-04-12 23:40:42,754 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'NewTask' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:42,754 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Title' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:42,754 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Title' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:42,754 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Description' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:42,754 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Description' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:42,754 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'AssignedPerson' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:42,754 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Save' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:42,755 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:42,755 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:40:42,757 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.TasksController.Create (SimpleTaskSystem.Web) in 50.2612ms
+INFO  2018-04-12 23:40:42,758 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 51.9911ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:40:42,803 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591732427572959  
+INFO  2018-04-12 23:40:42,806 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:40:42,806 [35   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:40:42,807 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.4831ms
+INFO  2018-04-12 23:40:42,807 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.2791ms 200 application/x-javascript
+INFO  2018-04-12 23:40:42,808 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591732427573324  
+INFO  2018-04-12 23:40:42,812 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2018-04-12 23:40:42,812 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/jquery-extensions.js  
+WARN  2018-04-12 23:40:42,813 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:42,813 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:40:42,814 [19   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:40:42,814 [28   ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/jquery-extensions.js was not modified
+INFO  2018-04-12 23:40:42,814 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 4.4707ms
+INFO  2018-04-12 23:40:42,814 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.2333ms 304 application/javascript
+INFO  2018-04-12 23:40:42,814 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.2417ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:40:42,816 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/views/tasks/create.js?v=04k113FQSG4ByfyrNwgBbFrZzHxCpzrZatPwtlV58VY  
+INFO  2018-04-12 23:40:42,817 [27   ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/views/tasks/create.js was not modified
+INFO  2018-04-12 23:40:42,817 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.459ms 304 application/javascript
+INFO  2018-04-12 23:40:48,577 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/api/services/app/Task/Create application/json 95
+INFO  2018-04-12 23:40:48,587 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Tasks.TaskAppService.Create (SimpleTaskSystem.Application) with arguments (SimpleTaskSystem.Tasks.Dtos.CreateTaskInput) - ModelState is Valid
+INFO  2018-04-12 23:40:48,597 [19   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Tasks.TaskAppService.Create is executed by an anonymous user in 10 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:40:48,598 [19   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-12 23:40:48,598 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Tasks.TaskAppService.Create (SimpleTaskSystem.Application) in 19.9186ms
+INFO  2018-04-12 23:40:48,599 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 21.5094ms 200 application/json; charset=utf-8
+INFO  2018-04-12 23:40:48,609 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tasks  
+INFO  2018-04-12 23:40:48,612 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) with arguments (SimpleTaskSystem.Tasks.Dtos.GetAllTasksInput) - ModelState is Valid
+INFO  2018-04-12 23:40:48,637 [35   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Tasks.TaskAppService.GetAll is executed by an anonymous user in 24 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:40:48,637 [35   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.TasksController.Index is executed by an anonymous user in 25 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:40:48,638 [35   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Tasks/Index.cshtml.
+WARN  2018-04-12 23:40:48,638 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:48,638 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:48,638 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'AddNew' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:48,638 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'AllTasks' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:48,638 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:48,638 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Completed' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:48,638 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:48,639 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:48,639 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'Unassigned' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:48,640 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:48,640 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:40:48,641 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) in 31.2839ms
+INFO  2018-04-12 23:40:48,641 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.7083ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:40:48,673 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591732486412617  
+INFO  2018-04-12 23:40:48,674 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591732486412303  
+INFO  2018-04-12 23:40:48,676 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2018-04-12 23:40:48,677 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:40:48,677 [27   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+WARN  2018-04-12 23:40:48,677 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:40:48,677 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:40:48,677 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.5201ms
+INFO  2018-04-12 23:40:48,678 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.0323ms 200 application/x-javascript
+INFO  2018-04-12 23:40:48,678 [19   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:40:48,678 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 3.4524ms
+INFO  2018-04-12 23:40:48,679 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.2336ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:40:48,703 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/views/tasks/index.js?v=L6aDGgJye0cm_ZMMsWq0uSPWLg0N5smxzXkH0YOkXvE  
+INFO  2018-04-12 23:40:48,704 [19   ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/views/tasks/index.js was not modified
+INFO  2018-04-12 23:40:48,705 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.1876ms 304 application/javascript
+INFO  2018-04-12 23:41:04,744 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tasks  
+INFO  2018-04-12 23:41:04,747 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) with arguments (SimpleTaskSystem.Tasks.Dtos.GetAllTasksInput) - ModelState is Valid
+INFO  2018-04-12 23:41:04,750 [35   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Tasks.TaskAppService.GetAll is executed by an anonymous user in 3 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:41:04,751 [35   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.TasksController.Index is executed by an anonymous user in 4 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:41:04,751 [35   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Tasks/Index.cshtml.
+WARN  2018-04-12 23:41:04,752 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:04,752 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:04,752 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'AddNew' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:04,752 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'AllTasks' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:04,752 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:04,752 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Completed' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:04,752 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:04,752 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:04,752 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'Unassigned' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:04,753 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:04,753 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:41:04,755 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) in 9.4113ms
+INFO  2018-04-12 23:41:04,755 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.9052ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:41:04,792 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591732647546919  
+INFO  2018-04-12 23:41:04,794 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591732647546617  
+INFO  2018-04-12 23:41:04,795 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+WARN  2018-04-12 23:41:04,796 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:04,796 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:41:04,797 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:41:04,797 [28   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:41:04,797 [19   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:41:04,797 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 3.25ms
+INFO  2018-04-12 23:41:04,797 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.2715ms
+INFO  2018-04-12 23:41:04,797 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.8232ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:41:04,798 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.7586ms 200 application/x-javascript
+INFO  2018-04-12 23:41:06,944 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tasks/Create  
+INFO  2018-04-12 23:41:06,948 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.TasksController.Create (SimpleTaskSystem.Web) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-12 23:41:06,950 [35   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.People.PersonAppService.GetPeopleComboboxItems is executed by an anonymous user in 2 ms from ::1 IP address with succeed.
+WARN  2018-04-12 23:41:06,950 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'Unassigned' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:41:06,950 [35   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.TasksController.Create is executed by an anonymous user in 3 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:41:06,950 [35   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Tasks/Create.cshtml.
+WARN  2018-04-12 23:41:06,951 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'NewTask' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:06,951 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'Title' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:06,951 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'Title' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:06,951 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'Description' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:06,951 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'Description' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:06,951 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'AssignedPerson' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:06,951 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'Save' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:06,952 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:06,952 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:41:06,954 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.TasksController.Create (SimpleTaskSystem.Web) in 8.4597ms
+INFO  2018-04-12 23:41:06,954 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.3795ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:41:06,993 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591732669537271  
+INFO  2018-04-12 23:41:06,994 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591732669537562  
+INFO  2018-04-12 23:41:06,996 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:41:06,997 [28   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:41:06,997 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.4415ms
+INFO  2018-04-12 23:41:06,997 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.1463ms 200 application/x-javascript
+INFO  2018-04-12 23:41:06,998 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+WARN  2018-04-12 23:41:06,999 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:06,999 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:41:07,001 [27   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:41:07,001 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 4.9822ms
+INFO  2018-04-12 23:41:07,002 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.8536ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:41:10,645 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tasks  
+INFO  2018-04-12 23:41:10,648 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) with arguments (SimpleTaskSystem.Tasks.Dtos.GetAllTasksInput) - ModelState is Valid
+INFO  2018-04-12 23:41:10,650 [28   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Tasks.TaskAppService.GetAll is executed by an anonymous user in 2 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:41:10,651 [28   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.TasksController.Index is executed by an anonymous user in 3 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:41:10,651 [28   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Tasks/Index.cshtml.
+WARN  2018-04-12 23:41:10,652 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:10,652 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:10,652 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'AddNew' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:10,652 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'AllTasks' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:10,652 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:10,652 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Completed' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:10,652 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:10,652 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:10,652 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'Unassigned' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:10,654 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:10,654 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:41:10,656 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) in 9.876ms
+INFO  2018-04-12 23:41:10,657 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.2182ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:41:10,687 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591732706558303  
+INFO  2018-04-12 23:41:10,689 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:41:10,689 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591732706558925  
+INFO  2018-04-12 23:41:10,690 [35   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:41:10,690 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.0412ms
+INFO  2018-04-12 23:41:10,690 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.6639ms 200 application/x-javascript
+INFO  2018-04-12 23:41:10,695 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+WARN  2018-04-12 23:41:10,707 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:41:10,707 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:41:10,709 [27   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:41:10,710 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 16.8191ms
+INFO  2018-04-12 23:41:10,710 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 20.6678ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:42:18,092 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2018-04-12 23:42:18,095 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.HomeController.Index (SimpleTaskSystem.Web) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-12 23:42:18,095 [27   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.HomeController.Index is executed by an anonymous user in 1 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:42:18,095 [27   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+WARN  2018-04-12 23:42:18,097 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:18,097 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:42:18,099 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.HomeController.Index (SimpleTaskSystem.Web) in 5.0694ms
+INFO  2018-04-12 23:42:18,099 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.6403ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:42:18,148 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591733380986442  
+INFO  2018-04-12 23:42:18,151 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+WARN  2018-04-12 23:42:18,152 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:18,152 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:42:18,153 [28   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:42:18,153 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 2.9957ms
+INFO  2018-04-12 23:42:18,153 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.6155ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:42:18,163 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591733380986117  
+INFO  2018-04-12 23:42:18,166 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:42:18,166 [28   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:42:18,166 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 1.7892ms
+INFO  2018-04-12 23:42:18,166 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.5043ms 200 application/x-javascript
+INFO  2018-04-12 23:42:18,928 [38   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Home/About  
+INFO  2018-04-12 23:42:18,930 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.HomeController.About (SimpleTaskSystem.Web) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-12 23:42:18,930 [38   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.HomeController.About is executed by an anonymous user in 0 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:42:18,930 [38   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/About.cshtml.
+WARN  2018-04-12 23:42:18,932 [38   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:18,932 [38   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:42:18,933 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.HomeController.About (SimpleTaskSystem.Web) in 4.0522ms
+INFO  2018-04-12 23:42:18,934 [38   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.8392ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:42:18,969 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591733389334476  
+INFO  2018-04-12 23:42:18,972 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591733389334812  
+INFO  2018-04-12 23:42:18,973 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:42:18,974 [19   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:42:18,974 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.6541ms
+INFO  2018-04-12 23:42:18,975 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.1367ms 200 application/x-javascript
+INFO  2018-04-12 23:42:18,976 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+WARN  2018-04-12 23:42:18,977 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:18,977 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:42:18,978 [27   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:42:18,979 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 4.6583ms
+INFO  2018-04-12 23:42:18,979 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.9664ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:42:19,504 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tasks  
+INFO  2018-04-12 23:42:19,509 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) with arguments (SimpleTaskSystem.Tasks.Dtos.GetAllTasksInput) - ModelState is Valid
+INFO  2018-04-12 23:42:19,513 [19   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Tasks.TaskAppService.GetAll is executed by an anonymous user in 3 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:42:19,514 [19   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.TasksController.Index is executed by an anonymous user in 5 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:42:19,514 [19   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Tasks/Index.cshtml.
+WARN  2018-04-12 23:42:19,515 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:19,515 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:19,515 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'AddNew' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:19,515 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'AllTasks' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:19,515 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:19,516 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Completed' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:19,516 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:19,516 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:19,516 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Unassigned' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:19,517 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:19,518 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:42:19,520 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) in 14.4819ms
+INFO  2018-04-12 23:42:19,521 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.7866ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:42:19,556 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591733395200901  
+INFO  2018-04-12 23:42:19,558 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+WARN  2018-04-12 23:42:19,559 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:19,559 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:42:19,560 [27   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:42:19,560 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 3.1878ms
+INFO  2018-04-12 23:42:19,561 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.9269ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:42:19,563 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591733395200268  
+INFO  2018-04-12 23:42:19,567 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:42:19,567 [28   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:42:19,567 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.1632ms
+INFO  2018-04-12 23:42:19,568 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.8624ms 200 application/x-javascript
+INFO  2018-04-12 23:42:29,494 [38   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpLocalization/ChangeCulture?cultureName=tr&returnUrl=/Tasks  
+INFO  2018-04-12 23:42:29,501 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpLocalizationController.ChangeCulture (Abp.AspNetCore) with arguments (tr, /Tasks) - ModelState is Valid
+INFO  2018-04-12 23:42:29,507 [38   ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /Tasks.
+INFO  2018-04-12 23:42:29,507 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpLocalizationController.ChangeCulture (Abp.AspNetCore) in 7.7128ms
+INFO  2018-04-12 23:42:29,507 [38   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.0047ms 302 
+INFO  2018-04-12 23:42:29,512 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tasks  
+INFO  2018-04-12 23:42:29,519 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) with arguments (SimpleTaskSystem.Tasks.Dtos.GetAllTasksInput) - ModelState is Valid
+INFO  2018-04-12 23:42:29,522 [19   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Tasks.TaskAppService.GetAll is executed by an anonymous user in 3 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:42:29,523 [19   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.TasksController.Index is executed by an anonymous user in 5 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:42:29,523 [19   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Tasks/Index.cshtml.
+WARN  2018-04-12 23:42:29,524 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:29,524 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:29,524 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'AddNew' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:29,524 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'AllTasks' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:29,524 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:29,525 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Completed' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:29,525 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:29,525 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:29,525 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Unassigned' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:29,526 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:29,526 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:42:29,529 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) in 12.11ms
+INFO  2018-04-12 23:42:29,529 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.4399ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:42:29,560 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591733495284764  
+INFO  2018-04-12 23:42:29,563 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2018-04-12 23:42:29,563 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591733495284433  
+WARN  2018-04-12 23:42:29,564 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:29,564 [35   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:42:29,564 [35   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:42:29,565 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 3.892ms
+INFO  2018-04-12 23:42:29,565 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.8437ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:42:29,565 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:42:29,566 [28   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:42:29,568 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 3.1314ms
+INFO  2018-04-12 23:42:29,568 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.0666ms 200 application/x-javascript
+INFO  2018-04-12 23:42:32,591 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpLocalization/ChangeCulture?cultureName=en&returnUrl=/Tasks  
+INFO  2018-04-12 23:42:32,593 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpLocalizationController.ChangeCulture (Abp.AspNetCore) with arguments (en, /Tasks) - ModelState is Valid
+INFO  2018-04-12 23:42:32,594 [19   ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /Tasks.
+INFO  2018-04-12 23:42:32,594 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpLocalizationController.ChangeCulture (Abp.AspNetCore) in 1.8274ms
+INFO  2018-04-12 23:42:32,594 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.3823ms 302 
+INFO  2018-04-12 23:42:32,598 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tasks  
+INFO  2018-04-12 23:42:32,601 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) with arguments (SimpleTaskSystem.Tasks.Dtos.GetAllTasksInput) - ModelState is Valid
+INFO  2018-04-12 23:42:32,607 [27   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Tasks.TaskAppService.GetAll is executed by an anonymous user in 5 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:42:32,608 [27   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.TasksController.Index is executed by an anonymous user in 7 ms from ::1 IP address with succeed.
+INFO  2018-04-12 23:42:32,608 [27   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Tasks/Index.cshtml.
+WARN  2018-04-12 23:42:32,609 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:32,609 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:32,609 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'AddNew' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:32,609 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'AllTasks' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:32,609 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:32,609 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Completed' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:32,610 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:32,610 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskState_Open' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:32,610 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Unassigned' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:32,611 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:32,611 [27   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:42:32,613 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.TasksController.Index (SimpleTaskSystem.Web) in 14.4939ms
+INFO  2018-04-12 23:42:32,614 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.75ms 200 text/html; charset=utf-8
+INFO  2018-04-12 23:42:32,634 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636591733526132192  
+INFO  2018-04-12 23:42:32,634 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636591733526131759  
+INFO  2018-04-12 23:42:32,636 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+WARN  2018-04-12 23:42:32,638 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Home' in localization source 'SimpleTaskSystem'!
+WARN  2018-04-12 23:42:32,638 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'TaskList' in localization source 'SimpleTaskSystem'!
+INFO  2018-04-12 23:42:32,638 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-12 23:42:32,638 [19   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:42:32,639 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 3.417ms
+INFO  2018-04-12 23:42:32,639 [28   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-12 23:42:32,639 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.7991ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-12 23:42:32,639 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 3.7118ms
+INFO  2018-04-12 23:42:32,639 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.1418ms 200 application/x-javascript
