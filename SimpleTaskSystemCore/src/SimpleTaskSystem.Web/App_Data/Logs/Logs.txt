@@ -3923,3 +3923,63 @@ INFO  2018-04-13 10:59:11,347 [10   ] ore.Mvc.Internal.ControllerActionInvoker -
 INFO  2018-04-13 10:59:11,351 [10   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
 INFO  2018-04-13 10:59:11,351 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 5.643ms
 INFO  2018-04-13 10:59:11,351 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.9624ms 200 application/x-javascript; charset=utf-8
+DEBUG 2018-04-13 11:20:22,914 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-13 11:20:22,993 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2018-04-13 11:20:23,015 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SimpleTaskSystem.Web.Startup.SimpleTaskSystemWebModule, SimpleTaskSystem.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-13 11:20:23,020 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SimpleTaskSystem.SimpleTaskSystemApplicationModule, SimpleTaskSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-13 11:20:23,021 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SimpleTaskSystem.SimpleTaskSystemCoreModule, SimpleTaskSystem.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-13 11:20:23,022 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-13 11:20:23,022 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-13 11:20:23,023 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SimpleTaskSystem.EntityFrameworkCore.SimpleTaskSystemEntityFrameworkCoreModule, SimpleTaskSystem.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-13 11:20:23,023 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-13 11:20:23,023 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-13 11:20:23,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-13 11:20:23,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-13 11:20:23,029 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+DEBUG 2018-04-13 11:20:23,235 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: SimpleTaskSystem.EntityFrameworkCore.SimpleTaskSystemDbContext, SimpleTaskSystem.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-13 11:20:23,349 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-04-13 11:20:23,364 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-13 11:20:23,582 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: SimpleTaskSystem
+DEBUG 2018-04-13 11:20:23,584 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-13 11:20:23,827 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-13 11:20:23,887 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes define auto mapping attributes
+DEBUG 2018-04-13 11:20:23,888 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SimpleTaskSystem.Tasks.Dtos.CreateTaskInput
+DEBUG 2018-04-13 11:20:23,893 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SimpleTaskSystem.Tasks.Dtos.ProjectListDto
+DEBUG 2018-04-13 11:20:23,894 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SimpleTaskSystem.Tasks.Dtos.TaskListDto
+INFO  2018-04-13 11:20:24,701 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2018-04-13 11:20:24,966 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.HomeController.Index (SimpleTaskSystem.Web) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-13 11:20:24,992 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.HomeController.Index is executed by an anonymous user in 61 ms from ::1 IP address with succeed.
+INFO  2018-04-13 11:20:27,917 [9    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2018-04-13 11:20:29,254 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.HomeController.Index (SimpleTaskSystem.Web) in 4369.4782ms
+INFO  2018-04-13 11:20:29,265 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4579.2676ms 200 text/html; charset=utf-8
+INFO  2018-04-13 11:20:29,303 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636592152292260464  
+INFO  2018-04-13 11:20:29,315 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636592152292251688  
+INFO  2018-04-13 11:20:29,366 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2018-04-13 11:20:29,391 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-13 11:20:29,565 [9    ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-13 11:20:29,566 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 210.7125ms
+INFO  2018-04-13 11:20:29,567 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 252.0478ms 200 application/x-javascript
+WARN  2018-04-13 11:20:29,598 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2018-04-13 11:20:29,622 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+INFO  2018-04-13 11:20:29,630 [15   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-13 11:20:29,630 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 291.8532ms
+INFO  2018-04-13 11:20:29,630 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 327.7056ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-13 11:20:29,662 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2018-04-13 11:20:29,665 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.9575ms 404 
+INFO  2018-04-13 11:20:43,411 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Tasks/Projects  
+INFO  2018-04-13 11:20:43,606 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method SimpleTaskSystem.Web.Controllers.TasksController.Projects (SimpleTaskSystem.Web) with arguments (SimpleTaskSystem.Tasks.Dtos.GetAllProjectsInput) - ModelState is Valid
+INFO  2018-04-13 11:20:44,316 [15   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Tasks.ProjectAppService.GetAll is executed by an anonymous user in 695 ms from ::1 IP address with succeed.
+INFO  2018-04-13 11:20:44,354 [15   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: SimpleTaskSystem.Web.Controllers.TasksController.Projects is executed by an anonymous user in 749 ms from ::1 IP address with succeed.
+INFO  2018-04-13 11:20:44,512 [15   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Tasks/Projects.cshtml.
+INFO  2018-04-13 11:20:44,537 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action SimpleTaskSystem.Web.Controllers.TasksController.Projects (SimpleTaskSystem.Web) in 1116.4331ms
+INFO  2018-04-13 11:20:44,537 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1125.9329ms 200 text/html; charset=utf-8
+INFO  2018-04-13 11:20:44,571 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636592152445364723  
+INFO  2018-04-13 11:20:44,572 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636592152445365150  
+INFO  2018-04-13 11:20:44,574 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2018-04-13 11:20:44,574 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-13 11:20:44,575 [10   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-13 11:20:44,575 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.1889ms
+INFO  2018-04-13 11:20:44,576 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.1645ms 200 application/x-javascript
+INFO  2018-04-13 11:20:44,578 [14   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-13 11:20:44,578 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 4.7153ms
+INFO  2018-04-13 11:20:44,578 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.9715ms 200 application/x-javascript; charset=utf-8
