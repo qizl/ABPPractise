@@ -12,9 +12,10 @@ using System;
 namespace SimpleTaskSystem.Migrations
 {
     [DbContext(typeof(SimpleTaskSystemDbContext))]
-    partial class SimpleTaskSystemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180413021558_PersonRemoveTime")]
+    partial class PersonRemoveTime
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -43,27 +44,6 @@ namespace SimpleTaskSystem.Migrations
                     b.ToTable("AppPersons");
                 });
 
-            modelBuilder.Entity("SimpleTaskSystem.Tasks.Project", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<Guid?>("AssignedPersonId");
-
-                    b.Property<DateTime>("CreationTime");
-
-                    b.Property<string>("Description");
-
-                    b.Property<string>("Title")
-                        .IsRequired();
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AssignedPersonId");
-
-                    b.ToTable("Projects");
-                });
-
             modelBuilder.Entity("SimpleTaskSystem.Tasks.Task", b =>
                 {
                     b.Property<int>("Id")
@@ -87,13 +67,6 @@ namespace SimpleTaskSystem.Migrations
                     b.HasIndex("AssignedPersonId");
 
                     b.ToTable("AppTasks");
-                });
-
-            modelBuilder.Entity("SimpleTaskSystem.Tasks.Project", b =>
-                {
-                    b.HasOne("SimpleTaskSystem.People.Person", "AssignedPerson")
-                        .WithMany()
-                        .HasForeignKey("AssignedPersonId");
                 });
 
             modelBuilder.Entity("SimpleTaskSystem.Tasks.Task", b =>

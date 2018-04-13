@@ -14,11 +14,13 @@ namespace SimpleTaskSystem.Web.Controllers
     public class TasksController : SimpleTaskSystemControllerBase
     {
         private readonly ITaskAppService _taskAppService;
+        private readonly IProjectAppService _projectAppService;
         private readonly IPersonAppService _personAppService;
 
-        public TasksController(ITaskAppService taskAppService, IPersonAppService personAppService)
+        public TasksController(ITaskAppService taskAppService, IProjectAppService projectAppService, IPersonAppService personAppService)
         {
             this._taskAppService = taskAppService;
+            this._projectAppService = projectAppService;
             this._personAppService = personAppService;
         }
 
@@ -43,6 +45,11 @@ namespace SimpleTaskSystem.Web.Controllers
             peopleSelectListItems.Insert(0, new SelectListItem { Value = string.Empty, Text = L("Unassigned"), Selected = true });
 
             return View(new CreateTaskViewModel(peopleSelectListItems));
+        }
+
+        public async Task<IActionResult> Projects(GetAllProjectsInput input)
+        {
+            return View(await this._projectAppService.GetAll(input));
         }
     }
 }

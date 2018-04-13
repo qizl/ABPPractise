@@ -12,9 +12,10 @@ using System;
 namespace SimpleTaskSystem.Migrations
 {
     [DbContext(typeof(SimpleTaskSystemDbContext))]
-    partial class SimpleTaskSystemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180413024211_AddProjects")]
+    partial class AddProjects
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -12,9 +12,10 @@ using System;
 namespace SimpleTaskSystem.Migrations
 {
     [DbContext(typeof(SimpleTaskSystemDbContext))]
-    partial class SimpleTaskSystemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180413021450_PersonAddTime")]
+    partial class PersonAddTime
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,6 +26,8 @@ namespace SimpleTaskSystem.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("CreateTime");
 
                     b.Property<DateTime>("CreationTime");
 
@@ -41,27 +44,6 @@ namespace SimpleTaskSystem.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppPersons");
-                });
-
-            modelBuilder.Entity("SimpleTaskSystem.Tasks.Project", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<Guid?>("AssignedPersonId");
-
-                    b.Property<DateTime>("CreationTime");
-
-                    b.Property<string>("Description");
-
-                    b.Property<string>("Title")
-                        .IsRequired();
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AssignedPersonId");
-
-                    b.ToTable("Projects");
                 });
 
             modelBuilder.Entity("SimpleTaskSystem.Tasks.Task", b =>
@@ -87,13 +69,6 @@ namespace SimpleTaskSystem.Migrations
                     b.HasIndex("AssignedPersonId");
 
                     b.ToTable("AppTasks");
-                });
-
-            modelBuilder.Entity("SimpleTaskSystem.Tasks.Project", b =>
-                {
-                    b.HasOne("SimpleTaskSystem.People.Person", "AssignedPerson")
-                        .WithMany()
-                        .HasForeignKey("AssignedPersonId");
                 });
 
             modelBuilder.Entity("SimpleTaskSystem.Tasks.Task", b =>

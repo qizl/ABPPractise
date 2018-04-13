@@ -6,6 +6,7 @@
         "Home": "主页",
         "About": "关于我们",
         "TaskList": "任务列表",
+        "ProjectList": "项目列表",
         "AddNew": "新建任务"
     }
 }

@@ -21,6 +21,13 @@ namespace SimpleTaskSystem.Web.Startup
                 ).AddItem(
                     new MenuItemDefinition(
                         PageNames.About,
+                        L("ProjectList"),
+                        url: "Tasks/Projects",
+                        icon: "fa fa-info"
+                        )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.About,
                         L("About"),
                         url: "Home/About",
                         icon: "fa fa-info"

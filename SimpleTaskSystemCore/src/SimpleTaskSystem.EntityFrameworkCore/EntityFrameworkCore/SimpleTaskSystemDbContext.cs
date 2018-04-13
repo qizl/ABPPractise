@@ -9,6 +9,7 @@ namespace SimpleTaskSystem.EntityFrameworkCore
     {
         public DbSet<Person> People { get; set; }
         public DbSet<Task> Tasks { get; set; }
+        public DbSet<Project> Projects { get; set; }
 
         public SimpleTaskSystemDbContext(DbContextOptions<SimpleTaskSystemDbContext> options)
             : base(options)
