@@ -32,14 +32,15 @@ namespace SimpleTaskSystem.Web.Startup
                         url: "Home/About",
                         icon: "fa fa-info"
                         )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        PageNames.Home,
-                        L("Home"),
-                        url: "",
-                        icon: "fa fa-home"
-                        )
                 );
+            //.AddItem(
+            //    new MenuItemDefinition(
+            //        PageNames.Home,
+            //        L("Home"),
+            //        url: "",
+            //        icon: "fa fa-home"
+            //        )
+            //);
         }
 
         private static ILocalizableString L(string name)

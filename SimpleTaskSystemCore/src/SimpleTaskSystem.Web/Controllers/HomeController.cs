@@ -6,7 +6,7 @@ namespace SimpleTaskSystem.Web.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Tasks");
         }
 
         public ActionResult About()

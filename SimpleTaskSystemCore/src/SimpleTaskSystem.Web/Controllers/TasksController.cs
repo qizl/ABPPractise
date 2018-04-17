@@ -22,6 +22,8 @@ namespace SimpleTaskSystem.Web.Controllers
             this._taskAppService = taskAppService;
             this._projectAppService = projectAppService;
             this._personAppService = personAppService;
+
+            //Models.SeedData.Initialize(taskAppService);
         }
 
         public async Task<IActionResult> Index(GetAllTasksInput input)
