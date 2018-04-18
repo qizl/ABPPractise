@@ -10,5 +10,6 @@ namespace SimpleTaskSystem.Tasks
         Task<ListResultDto<TaskListDto>> GetAll(GetAllTasksInput input);
 
         System.Threading.Tasks.Task Create(CreateTaskInput input);
+        System.Threading.Tasks.Task CreateMany(string title, int count);
     }
 }
