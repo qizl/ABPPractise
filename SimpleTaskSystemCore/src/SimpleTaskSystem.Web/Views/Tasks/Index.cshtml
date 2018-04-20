@@ -16,19 +16,24 @@
         <script src="~/js/views/tasks/index.min.js" asp-append-version="true"></script>
     </environment>
 }
-
+<p>
+    ClientIP: @ViewBag.ClientIP
+</p>
+<p>
+    ServerIP:@ViewBag.ServerIP
+</p>
 <h2>
     @L("TaskList")
     <span><a class="btn btn-primary btn-sm" asp-action="Create">@L("AddNew")</a></span>
     <span class="pull-right">
         @Html.DropDownListFor(
-                          model => model.SelectedTaskState,
-                          Model.GetTasksStateSelectListItems(LocalizationManager),
-                          new
-                          {
-                              @class = "form-control",
-                              id = "TaskStateCombobox"
-                          })
+                                         model => model.SelectedTaskState,
+                                         Model.GetTasksStateSelectListItems(LocalizationManager),
+                                         new
+                                         {
+                                             @class = "form-control",
+                                             id = "TaskStateCombobox"
+                                         })
     </span>
 </h2>
 

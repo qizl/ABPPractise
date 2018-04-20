@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SimpleTaskSystem.People;
@@ -16,12 +17,14 @@ namespace SimpleTaskSystem.Web.Controllers
         private readonly ITaskAppService _taskAppService;
         private readonly IProjectAppService _projectAppService;
         private readonly IPersonAppService _personAppService;
+        private readonly IHttpContextAccessor _accessor;
 
-        public TasksController(ITaskAppService taskAppService, IProjectAppService projectAppService, IPersonAppService personAppService)
+        public TasksController(ITaskAppService taskAppService, IProjectAppService projectAppService, IPersonAppService personAppService, IHttpContextAccessor accessor)
         {
             this._taskAppService = taskAppService;
             this._projectAppService = projectAppService;
             this._personAppService = personAppService;
+            this._accessor = accessor;
 
             Models.SeedData.Initialize(taskAppService);
         }
@@ -34,6 +37,10 @@ namespace SimpleTaskSystem.Web.Controllers
             {
                 SelectedTaskState = input.State
             };
+
+            ViewBag.ClientIP = this._accessor.HttpContext.Connection.RemoteIpAddress.ToString();
+            //ViewBag.ServerIP = this._accessor.HttpContext.Connection.LocalIpAddress.ToString();
+            ViewBag.ServerIP = this._accessor.HttpContext.Request.Host.Host;
 
             return View(model);
         }
